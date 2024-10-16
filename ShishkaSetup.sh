@@ -137,7 +137,7 @@ docker-compose up -d
 # Проверяем работу ноды с помощью curl
 show "Пробуем запрос к ноде..."
 curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false]}' \
-  -H "Content-Type: application/json" http://localhost:8545
+  -H "Content-Type: application/json" http://localhost:8745
 
 
 show "Установка завершена! Node Exporter и сервис отправки метрик запущены."
